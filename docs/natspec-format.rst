@@ -113,17 +113,6 @@ la misma manera como si fuese etiquetado con ``@notice``.
 =============== ====================================================================================== =============================
 Etiqueta                                                                                               Contexto
 =============== ====================================================================================== =============================
-<<<<<<< HEAD
-``@title``      Un título que debería describir el contrato o la interfaz                              contrato, biblioteca, interfaz
-``@author``     El nombre del autor                                                                    contrato, biblioteca, interfaz
-``@notice``     Explica a un usuario final lo que esto hace                                            contrato, biblioteca, interfaz, función, variable de estado pública, evento
-``@dev``        Explica a un desarrollador cualquier detalle extra                                     contrato, biblioteca, interfaz, función, variable de estado pública, evento
-``@param``      Documenta un parámetro como en Doxygen (debe ser seguida por un nombre de parámetro)   función, evento
-``@return``     Documenta las variables de retorno de la función de un contrato                        función, variable de estado pública
-``@inheritdoc`` Copia todas las etiquetas faltantes de la función base                                 función, variable de estado pública
-                (debe ser seguida por el nombre del contrato)
-``@custom:...`` Etiqueta personalizada, la semántica se define por la aplicación                       en todas partes
-=======
 ``@title``      A title that should describe the contract/interface                                    contract, library, interface, struct, enum
 ``@author``     The name of the author                                                                 contract, library, interface, struct, enum
 ``@notice``     Explain to an end user what this does                                                  contract, library, interface, function, public state variable, event, struct, enum
@@ -132,7 +121,6 @@ Etiqueta                                                                        
 ``@return``     Documents the return variables of a contract's function                                function, public state variable
 ``@inheritdoc`` Copies all missing tags from the base function (must be followed by the contract name) function, public state variable
 ``@custom:...`` Custom tag, semantics is application-defined                                           everywhere
->>>>>>> english/develop
 =============== ====================================================================================== =============================
 
 Si su función retorna múltiples valores, como ``(int quotient, int remainder)``,
@@ -165,12 +153,6 @@ al usuario final como:
 
 si una función es invocada y la entrada ``a`` se le asigna un valor de 10.
 
-<<<<<<< HEAD
-Específicamente estas expresiones dinámicas están fuera del alcance de la documentación de Solidity
-y puede leer más en `el proyecto radspec <https://github.com/aragon/radspec>`__.
-
-=======
->>>>>>> 0b4b1045cf3e78065f446714872926cde72e5135
 .. _header-inheritance:
 
 Notas de Herencia
