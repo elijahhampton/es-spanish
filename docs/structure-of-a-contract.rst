@@ -117,11 +117,6 @@ Los eventos son interfaces convenientes con las facilidades de registro de la EV
     event HighestBidIncreased(address bidder, uint amount); // Event
 
     contract SimpleAuction {
-<<<<<<< HEAD
-        event HighestBidIncreased(address bidder, uint amount); // Evento
-
-=======
->>>>>>> english/develop
         function bid() public payable {
             // ...
             emit HighestBidIncreased(msg.sender, msg.value); // Desencadenando un evento
